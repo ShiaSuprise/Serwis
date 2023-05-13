@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane fx:id="FirstStack" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="283.0" prefWidth="311.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LoginController">
+   <children>
+      <AnchorPane prefHeight="330.0" prefWidth="330.0" style="-fx-background-color: A5C9FF;">
+         <children>
+            <Text layoutX="72.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Użytkownik">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="94.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Logowanie">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Text>
+            <TextField fx:id="username_txt" layoutX="72.0" layoutY="110.0" prefHeight="25.0" prefWidth="187.0" promptText="Wpisz nazwę użytkownika" />
+            <Text layoutX="72.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hasło" />
+            <Button fx:id="btnLogowanie" layoutX="111.0" layoutY="225.0" mnemonicParsing="false" onAction="#onClickLogowanie" style="-fx-background-color: white;" text="Zaloguj się">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <PasswordField fx:id="password_txt" layoutX="69.0" layoutY="184.0" prefHeight="25.0" prefWidth="187.0" promptText="Wpisz haslo" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

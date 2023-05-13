@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane fx:id="CompanyStack" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CompanyController">
+   <children>
+      <AnchorPane prefHeight="500.0" prefWidth="721.0" style="-fx-background-color: A5C9FF;">
+         <children>
+            <Button fx:id="btnChange" layoutX="418.0" layoutY="118.0" mnemonicParsing="false" onAction="#onClickChange" prefHeight="29.0" prefWidth="140.0" text="Zmień status">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <TextArea fx:id="textArea2" editable="false" layoutX="16.0" layoutY="45.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="310.0" prefWidth="185.0" />
+            <Button fx:id="btnStats" layoutX="524.0" layoutY="23.0" mnemonicParsing="false" onAction="#onClickStats" prefHeight="30.0" prefWidth="60.0" text="Podgląd" />
+            <Button fx:id="btnID" layoutX="461.0" layoutY="58.0" mnemonicParsing="false" onAction="#onClickID" prefHeight="30.0" prefWidth="60.0" text="Wybierz" />
+            <Text layoutX="208.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Statystyki reklamacji w danym dniu">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="295.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Podgląd zgłoszenia">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <TextArea fx:id="textArea" editable="false" layoutX="208.0" layoutY="153.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="202.0" prefWidth="363.0" wrapText="true" />
+            <Button fx:id="btnLogout" layoutX="16.0" layoutY="361.0" mnemonicParsing="false" onAction="#onClickLogout" text="Wyloguj" />
+            <TextField fx:id="Date_txt" layoutX="298.0" layoutY="34.0" prefHeight="8.0" prefWidth="85.0" promptText="Podaj datę">
+               <font>
+                  <Font size="10.0" />
+               </font></TextField>
+            <TextField fx:id="NewStatus_txt" layoutX="457.0" layoutY="93.0" prefHeight="25.0" prefWidth="101.0" promptText="Nowy status" />
+            <TextField fx:id="IDZ_txt" layoutX="418.0" layoutY="60.0" prefHeight="25.0" prefWidth="32.0" promptText="ID">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </TextField>
+            <Text layoutX="267.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Zmień status zgłoszenia">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="IDS_txt" layoutX="418.0" layoutY="93.0" prefHeight="25.0" prefWidth="32.0" promptText="ID">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </TextField>
+            <Button fx:id="btnAll" layoutX="43.0" layoutY="8.0" mnemonicParsing="false" onAction="#onClickAll" prefHeight="30.0" prefWidth="130.0" text="Wszystkie zgłoszenia" />
+            <Button fx:id="btnView" layoutX="522.0" layoutY="58.0" mnemonicParsing="false" onAction="#onClickView" prefHeight="30.0" prefWidth="60.0" text="Podgląd" />
+            <Button fx:id="btnDay" layoutX="462.0" layoutY="23.0" mnemonicParsing="false" onAction="#onClickDay" prefHeight="30.0" prefWidth="60.0" text="Wybierz" />
+         </children></AnchorPane>
+   </children>
+</StackPane>
